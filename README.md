@@ -6,6 +6,7 @@ While observing this file, one can make sure that the size of trained model is d
 
 # android_apps 
 A sample inference on Andoid device can be made using the files in this folder. Visit this link for detailed doccumentation https://www.tensorflow.org/lite/guide/inference#android_platform
+
 Tips:
 1. Add the TensorFlow dependency to build.gradle file
 2. To use the Anfroid Neural Networks API, Call the setUseNNAPI method on the interpreter and set its parameter to true.
@@ -14,7 +15,8 @@ Tips:
 
 # ios_apps
 Similar to mobiles running on Andoid os, the TF models can be deployed to interpret on ios platform. 
-The steps involved are same, train a custom TF model, convert them to TFlite format after post training quantizations and interpret on ios devices using Swift programming language.
+The steps involved are same, train a custom TF model, convert them to TFlite format after post training quantizations and interpret on ios devices using Swift programming language. Visit this link for detailed description: https://www.tensorflow.org/lite/guide/inference#ios_platform
+
 Tips:
 1. To deploy model in ios for offline users add the model as part of app bundle
 2. The images in ios memory are in CVPixel buffer format, remove the alpha channel, resize and pass the image to TFLite interpreter.
